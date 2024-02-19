@@ -1,0 +1,1 @@
+Olá, esse projeto foi realizado no desafio da turma 6 do ONE em parceria com a Alura!

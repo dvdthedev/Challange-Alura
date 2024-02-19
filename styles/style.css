@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+    --cor-respost: #FFFFFF;
+    --cor-de-fundo: #F3F5FC;
+    --letra-texto: #0A3871;
+}
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+body{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    height: calc(100% - 40px);
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    align-items: center;
+    margin: 40px;
+    width: calc(100vw - 40px);
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+    width: 65%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px;
+    
+    
+}
+.text__textarea{
+    all: unset;
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    background-color: var(--cor-de-fundo);
+    color: var(--letra-texto);
+    margin: 128px;
+    width: 70%;
+    height: 50%;
+}
+
+.text__buttons_box{
+    display: flex;
+    gap: 40px;
+    margin: 32px 0px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.text__buttons_texto{
+    font-size: 0.75rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #495057;
+    margin-bottom: -25px;
+ 
+}
+
+.text-buttons{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: flex-start;
+}
+
+
+
+.respost{
+    padding: 32px 0px;
+    height: 95%;
+    box-sizing: border-box;    
+    width: 25%;
+    max-width: 400px;    
+    background-color: var(--cor-respost);
+    border-radius: 32px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 40px;
+    gap: 32px;
+}
+
+.repost__norespost{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.respost__norespost2{
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.respost__imgbox{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+
+.respost__resposta{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #495057;
+    visibility: hidden;
+}
+
+
+
+#copybutton{
+      visibility: hidden;   
+     
+}
+
+@media(max-width: 1000px){
+    html{
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+    body{
+        flex-direction: column;
+        margin: 0;
+        height: auto;
+    }
+    .respost__img{
+        display: none;
+        /* visibility: hidden; */
+    }
+    .text{
+        width: calc(100% - 40px);
+        height: 70dvh;
+    }
+    .respost{
+        width: 90%;
+        max-width: 1080px;
+        height: auto;
+        margin-bottom: 40px;
+    }
+    .text__textarea{
+        justify-self: start;
+        margin: 0;
+        width: 90%;
+        height: 30%;
+        margin-top: 120px;
+    }
+    .text-buttons{
+        width: 90%;
+        justify-content: space-between;
+        
+    }
+    
+
+}
+
+
+@media(max-width: 700px){
+    .text__buttons_box{
+        flex-direction: column;        
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+    .text-buttons{
+        align-items: center;
+    }
+}

@@ -1,0 +1,71 @@
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    
+    --border-botao: 1px;
+    --border-color-botao: #0A3871;
+    --cor-branca: #FFFFFF;
+
+
+}
+
+#copybutton{
+    width: 84%;
+    max-width: 336px;
+    height: 67px;
+    border-radius: 24px;
+    color: var(--border-color-botao);
+    background-color: var(--cor-branca);
+    border: 1px solid #0A3871;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.text__buttons__criptografar{
+    width: 45%;
+    max-width: 336px;
+    height: 67px;
+    border-radius: 24px;
+    color: #FFFFFF;
+    background-color: var(--border-color-botao);
+    border: 1px solid #0A3871;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.text__buttons__descriptografar{
+    width: 45%;
+    max-width: 336px;
+    height: 67px;
+    border-radius: 24px;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+@media(max-width: 1000px){
+    #copybutton{
+        width: calc(100% - 64px);
+        max-width: calc(100% - 64px);
+    }
+    
+}
+
+@media(max-width: 700px){
+    .text__button{
+        width: 90%;
+        max-width: 90%;
+    }
+    
+}
