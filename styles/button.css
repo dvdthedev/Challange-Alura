@@ -12,46 +12,69 @@
     --border-botao: 1px;
     --border-color-botao: #0A3871;
     --cor-branca: #FFFFFF;
+    --cor-letra: #0A3871;
+    --cor-letra-branca : #FFFFFF;
+    
 
 
 }
+.dark-theme{
+    --border-botao: 1px;
+    --border-color-botao: #3700B3;
+    --cor-branca: #6200EE;
+    --cor-letra: #d3c1eb;
+    --cor-letra-branca: #d3c1eb;
+}
 
 #copybutton{
+    
     width: 84%;
     max-width: 336px;
     height: 67px;
     border-radius: 24px;
-    color: var(--border-color-botao);
+    color: var(--cor-letra);
     background-color: var(--cor-branca);
-    border: 1px solid #0A3871;
+    border: 1px solid var(--border-color-botao);
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 1rem;
+    cursor: pointer;
 }
+
+
+
 
 .text__buttons__criptografar{
     width: 45%;
-    max-width: 336px;
+    max-width: 400px;
     height: 67px;
     border-radius: 24px;
-    color: #FFFFFF;
+    color: var(--cor-letra-branca);
     background-color: var(--border-color-botao);
-    border: 1px solid #0A3871;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 1rem;
+    border: none;
+    cursor: pointer;
 }
+
+.text__buttons__criptografar:active{
+    opacity: 0.9;
+}
+
 
 .text__buttons__descriptografar{
     width: 45%;
-    max-width: 336px;
+    max-width: 400px;
     height: 67px;
     border-radius: 24px;
-    color: #0A3871;
-    border: 1px solid #0A3871;
+    background-color: var(--cor-branca);
+    color: var(--cor-letra);
+    border: 1px solid var(--border-color-botao);
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 @media(max-width: 1000px){

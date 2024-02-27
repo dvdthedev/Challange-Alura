@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 :root{
-    --cor-respost: #FFFFFF;
-    --cor-de-fundo: #F3F5FC;
-    --letra-texto: #0A3871;
+    
+    --cor-primaria: #F3F5FC; 
+    --cor-secundaria: #FFFFFF;    
+    --cor-tercearia: #0A3871;
+    --cor-resposta: #495057;
+    
+}
+
+.dark-theme{
+    --cor-primaria: #121212;
+    --cor-secundaria: #1F1B24 ;    
+    --cor-tercearia: #9290C3;
+    --cor-resposta: #535C91;
 }
 *, 
 *:after,
@@ -12,6 +22,7 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
 html{
     height: 100dvh;
     width: 100dvw;
@@ -25,13 +36,21 @@ html{
     left: 40px;
 }
 
+.moon{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 24px;
+    cursor: pointer;
+}
+
 body{
     display: flex;
     justify-content: space-between;
     list-style-type: none;
     height: calc(100% - 40px);
     box-sizing: border-box;
-    background-color: var(--cor-de-fundo);
+    background-color: var(--cor-primaria);
     align-items: center;
     margin: 40px;
     width: calc(100vw - 40px);
@@ -41,24 +60,27 @@ body{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    height: 100%;
+    height: 96%;
     width: 65%;
     align-items: center;
     justify-content: space-between;
     margin: 40px;
-    
-    
 }
+
 .text__textarea{
     all: unset;
     font-size: 2rem;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    background-color: var(--cor-de-fundo);
-    color: var(--letra-texto);
-    margin: 128px;
+    color: var(--cor-tercearia);
+    margin: 64px;
     width: 70%;
     height: 50%;
+}
+
+.text__textarea::placeholder{
+    color: var(--cor-tercearia);
+    opacity: 0.2;
 }
 
 .text__buttons_box{
@@ -73,9 +95,8 @@ body{
     font-size: 0.75rem;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    color: #495057;
-    margin-bottom: -25px;
- 
+    color: var(--cor-resposta);
+    margin-bottom: -25px; 
 }
 
 .text-buttons{
@@ -85,15 +106,13 @@ body{
     align-items: flex-start;
 }
 
-
-
 .respost{
     padding: 32px 0px;
     height: 95%;
     box-sizing: border-box;    
-    width: 25%;
+    width: 30%;
     max-width: 400px;    
-    background-color: var(--cor-respost);
+    background-color: var(--cor-secundaria);
     border-radius: 32px;    
     display: flex;
     flex-direction: column;
@@ -103,49 +122,42 @@ body{
     gap: 32px;
 }
 
+.respost__resposta{
+    width: 70%;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--cor-resposta);
+    max-height: 80%;
+    overflow: auto;
+    overflow-wrap: break-word; 
+}
+.respost__imgbox{
+    width: 70%;
+    display: flex;
+    flex-direction: column; 
+}
+
 .repost__norespost{
     font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
     text-align: center;
     font-weight: 700;
+    color: var(--cor-resposta);
 }
 
 .respost__norespost2{
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     text-align: center;
-}
-
-.respost__imgbox{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    
-    
-}
-
-
-.respost__resposta{
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: #495057;
-    visibility: hidden;
-}
-
-
-
-#copybutton{
-      visibility: hidden;   
-     
+    color: var(--cor-resposta);
 }
 
 @media(max-width: 1000px){
     html{
         height: auto;
         width: auto;
-        display: flex;
-        justify-content: center;
     }
     body{
         flex-direction: column;
@@ -153,8 +165,7 @@ body{
         height: auto;
     }
     .respost__img{
-        display: none;
-        /* visibility: hidden; */
+        display: none;        
     }
     .text{
         width: calc(100% - 40px);

@@ -9,30 +9,32 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <header class="logo">
-        <img src="/Assets/Vector.png" alt="letra a logo alura">
+    <header >
+        <img class="logo" id="logo" src="/Assets/Logo.svg" alt="letra a logo alura">
+        <img onclick="darkMode()" class="moon" id="moon" src="/Assets/moon-solid.svg" alt="moon icon">
     </header>
     
         <div class="text">
-            <textarea  class="text__textarea" type="text" name="nomeDoCampo" placeholder="Digite seu texto aqui"></textarea>
+            <textarea id="textarea"  class="text__textarea" type="text" name="nomeDoCampo" placeholder="Digite seu texto aqui"></textarea>
             <div class="text-buttons">
-                <p class="text__buttons_texto"><img src="/Assets/bi_exclamation-circle-fill.png" alt="excalamação">Apenas letras minúsculas e sem acento.</p>
+                <p class="text__buttons_texto"><img src="/Assets/exclamation.svg" alt="excalamação">Apenas letras minúsculas e sem acento.</p>
                 
                 <div class="text__buttons_box">                    
-                    <button class="text__buttons__criptografar text__button">Criptografar</button>
-                    <button class="text__buttons__descriptografar text__button">Descriptografar</button>
+                    <button onclick="encripta()" class="text__buttons__criptografar text__button">Criptografar</button>
+                    <button onclick="desencripta()" class="text__buttons__descriptografar text__button">Descriptografar</button>
                 </div>
             </div>
         </div>
         
         <div class="respost">
-            <p class="respost__resposta">resposta aqui</p>
-            <div class="respost__imgbox">
-                <img class="respost__img" src="/Assets/High quality products 1 1.png" alt="Imagem de um rapaz ajoelhado com uma lupa">
+            <p class="respost__resposta" id="respostaGerada" style="visibility: hidden;"></p>
+            <div class="respost__imgbox" id="caixaImagem" style="visibility: visible;">
+                <img id="imgResposta" class="respost__img" src="/Assets/resposta.svg" alt="Imagem de um rapaz ajoelhado com uma lupa">
                 <p class="repost__norespost">Nenhuma mensagem encontrada</p>
                 <p class="respost__norespost2">Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
-            <button id="copybutton">Copiar</button>
+            
+            <button onclick="copy()" id="copybutton" class="respost__copy" style="visibility: hidden;">Copiar</button>
         </div>
    
 </body>
