@@ -73,7 +73,7 @@ function copy() {
     let textToCopy = copyText.textContent;
     navigator.clipboard.writeText(textToCopy)
         
-}
+} //Copia o texto gerado pela criptografia/descriptografia que será levado para o id respostaGerada para o usuário ao ativar o botão de copiar.
 
 document.addEventListener("DOMContentLoaded", function() {
     const botaoCopiar = document.getElementById("copybutton");
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
         console.error("Elemento com o ID 'copybutton' não encontrado.");
     }
-});
+}); //cria um evento alterando a string copiar para copiado! ao ativar o botão copiar, criando um efeito gráfico para o usuário saber que o botão foi acionado.
 
 
 function darkMode(){
@@ -97,9 +97,11 @@ function darkMode(){
         moon.src = '/Assets/sun-solid.svg'
         logo.src = '/Assets/logoDark.svg'
         imgResposta.src = '/Assets/sherlock.svg'
+        textoTema.textContent = 'claro'
     } else {
         moon.src = '/Assets/moon-solid.svg'
         logo.src = '/Assets/Logo.svg'
         imgResposta.src = '/Assets/resposta.svg'
+        textoTema.textContent = 'escuro'
     }
-}
+} //ativa o modo escuro do site quando o usuário clica no ícone de lua, e também volta para o modo claro quando o usuário clica no ícone de sol.

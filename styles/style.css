@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
 :root{
     
     --cor-primaria: #F3F5FC; 
@@ -14,14 +22,7 @@
     --cor-tercearia: #9290C3;
     --cor-resposta: #535C91;
 }
-*, 
-*:after,
-*:before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
+
 
 html{
     height: 100dvh;
@@ -34,14 +35,31 @@ html{
     position: absolute;
     top: 40px;
     left: 40px;
+    display: flex;
 }
 
 .moon{
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 28px;
     width: 24px;
     cursor: pointer;
+}
+
+.tema{
+    position: absolute;
+    top: 50px;
+    right: 28px;
+    width: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: var(--cor-tercearia);    
 }
 
 body{
