@@ -51,7 +51,7 @@ function encripta(){
     console.log(novaString)
     let resposta = document.getElementById("respostaGerada")
     return resposta.textContent = novaString
-} //encripta o text area e envia a resposta para o respost
+} //encripta o text area e envia a resposta para o respost.
 
 function desencripta(){
     let str = document.getElementById("textarea").value
@@ -66,7 +66,7 @@ function desencripta(){
     let resposta = document.getElementById("respostaGerada")
     return resposta.textContent = str
 
-}//desencripta o text area e envia a resposta para o respost
+}//desencripta o text area e envia a resposta para o respost.
 
 function copy() {
     let copyText = document.getElementById("respostaGerada");
