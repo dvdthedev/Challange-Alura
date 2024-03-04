@@ -14,10 +14,13 @@ O desafio consiste em criar um site simples que permita aos usuários inserir um
 
 ## Layout do Projeto
 
+### Layout para visualização em Computadores
+  <img src="Assets/Layout.png" alt="Layout para visualização em navegadores de computador" width="90%">
+
 ### Layout para visualização em navegadores Mobile
 <div style="display: flex; justify-content: space-between;">
-  <img src="Assets/Layout%20Mobile%201.png" alt="Layout para visualização em navegadores Mobile 1" width="45%">
-  <img src="Assets/Layout%20Mobile%202.png" alt="Layout para visualização em navegadores Mobile 2" width="45%">
+  <img src="Assets/Layout%20Mobile%201.png" alt="Layout para visualização em navegadores Mobile 1" width="45%"> 
+  <img src="Assets/Layout%20Mobile%202.png" alt="Layout para visualização em navegadores Mobile 2" width="45%"> 
 </div>
 
 
@@ -25,8 +28,10 @@ O desafio consiste em criar um site simples que permita aos usuários inserir um
 
 - **Inserir texto:** Os usuários podem inserir texto em um campo de entrada.
 - **Criptografar texto:** Ao clicar em um botão "Criptografar", o texto inserido pelo usuário será criptografado.
+- **Descriptografar texto:** Ao clicar em um botão "Descriptografar", o texto inserido pelo usuário será descriptografado.
 - **Exibir texto criptografado:** O texto criptografado será exibido em uma caixa de resposta.
 - **Botão Copiar:** Um botão "Copiar" permite que o usuário copie o texto criptografado para a área de transferência.
+- **Modo escuro:** Um botão "Modo escuro" que permite ao usuário ter uma visualização mais confortável em ambientes pouco iluminados.
 
 ## Como Executar o Projeto
 
@@ -34,9 +39,6 @@ O desafio consiste em criar um site simples que permita aos usuários inserir um
 git clone https://github.com/dvdthedev/Challange-Alura
 2. Abra o arquivo `index.html` em um navegador da web.
 
-## Exemplo
-
-Um exemplo básico do que o projeto pode se parecer está disponível em [Exemplo do Desafio](#).
 
 ## Contribuindo
 
