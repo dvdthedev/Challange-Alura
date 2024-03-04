@@ -12,6 +12,15 @@ O desafio consiste em criar um site simples que permita aos usuários inserir um
 - CSS: Utilizado para estilizar os elementos da página.
 - JavaScript: Utilizado para implementar a lógica de criptografia e interatividade da página.
 
+## Layout do Projeto
+
+### Layout para visualização em navegadores Mobile
+<div style="display: flex; justify-content: space-between;">
+  <img src="Assets/Layout%20Mobile%201.png" alt="Layout para visualização em navegadores Mobile 1" width="45%">
+  <img src="Assets/Layout%20Mobile%202.png" alt="Layout para visualização em navegadores Mobile 2" width="45%">
+</div>
+
+
 ## Funcionalidades
 
 - **Inserir texto:** Os usuários podem inserir texto em um campo de entrada.
@@ -33,6 +42,4 @@ Um exemplo básico do que o projeto pode se parecer está disponível em [Exempl
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas ou enviar solicitações de recebimento.
 
-## Licença
 
-Este projeto está licenciado sob a [MIT License](LICENSE).
