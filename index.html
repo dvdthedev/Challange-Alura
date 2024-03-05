@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/button.css">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/button.css">
     <script src="script.js"></script>
     
 </head>
 <body>
     <header >
-        <img class="logo" id="logo" src="/Assets/Logo.svg" alt="letra a logo alura">
-        <img onclick="darkMode()" class="moon" id="moon" src="/Assets/moon-solid.svg" alt="moon icon">
+        <img class="logo" id="logo" src="./Assets/Logo.svg" alt="letra a logo alura">
+        <img onclick="darkMode()" class="moon" id="moon" src="./Assets/moon-solid.svg" alt="moon icon">
         <div onclick="darkMode()" class="tema">
             <span>Tema</span>
             <span id="textoTema">escuro</span>
@@ -22,7 +22,7 @@
         <div class="text">
             <textarea id="textarea"  class="text__textarea" type="text" name="nomeDoCampo" placeholder="Digite seu texto aqui"></textarea>
             <div class="text-buttons">
-                <p class="text__buttons_texto"><img src="/Assets/exclamation.svg" alt="excalamação">Apenas letras minúsculas e sem acento.</p>
+                <p class="text__buttons_texto"><img src="./Assets/exclamation.svg" alt="excalamação">Apenas letras minúsculas e sem acento.</p>
                 
                 <div class="text__buttons_box">                    
                     <button onclick="encripta()" class="text__buttons__criptografar text__button">Criptografar</button>
@@ -34,7 +34,7 @@
         <div class="respost">
             <p class="respost__resposta" id="respostaGerada" style="visibility: hidden;"></p>
             <div class="respost__imgbox" id="caixaImagem" style="visibility: visible;">
-                <img id="imgResposta" class="respost__img" src="/Assets/resposta.svg" alt="Imagem de um rapaz ajoelhado com uma lupa">
+                <img id="imgResposta" class="respost__img" src="./Assets/resposta.svg" alt="Imagem de um rapaz ajoelhado com uma lupa">
                 <p class="repost__norespost">Nenhuma mensagem encontrada</p>
                 <p class="respost__norespost2">Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
