@@ -94,14 +94,14 @@ document.addEventListener("DOMContentLoaded", function() {
 function darkMode(){
     document.body.classList.toggle('dark-theme')
     if(document.body.classList.contains('dark-theme')){
-        moon.src = '/Assets/sun-solid.svg'
-        logo.src = '/Assets/logoDark.svg'
-        imgResposta.src = '/Assets/sherlock.svg'
+        moon.src = './Assets/sun-solid.svg'
+        logo.src = './Assets/logoDark.svg'
+        imgResposta.src = './Assets/sherlock.svg'
         textoTema.textContent = 'claro'
     } else {
-        moon.src = '/Assets/moon-solid.svg'
-        logo.src = '/Assets/Logo.svg'
-        imgResposta.src = '/Assets/resposta.svg'
+        moon.src = './Assets/moon-solid.svg'
+        logo.src = './Assets/Logo.svg'
+        imgResposta.src = './Assets/resposta.svg'
         textoTema.textContent = 'escuro'
     }
 } //ativa o modo escuro do site quando o usuário clica no ícone de lua, e também volta para o modo claro quando o usuário clica no ícone de sol.
