@@ -96,6 +96,7 @@ body{
     height: 50%;
 }
 
+
 .text__textarea::placeholder{
     color: var(--cor-tercearia);
     opacity: 0.2;
@@ -115,6 +116,12 @@ body{
     font-weight: 400;
     color: var(--cor-resposta);
     margin-bottom: -25px; 
+    display: flex;
+    align-items: center;
+}
+
+.img__exclamation{
+    margin-right: 2px;
 }
 
 .text-buttons{
