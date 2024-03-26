@@ -47,8 +47,7 @@ function encripta(){
         }
 
     } 
-    visibilidade()
-    console.log(novaString)
+    visibilidade() 
     let resposta = document.getElementById("respostaGerada")
     return resposta.textContent = novaString
 } //encripta o text area e envia a resposta para o respost.
@@ -61,7 +60,6 @@ function desencripta(){
     str = str.replaceAll('ufat', 'u');
     str = str.replaceAll('ober', 'o');
     str = str.replaceAll('enter', 'e');
-    console.log(str)
     visibilidade()
     let resposta = document.getElementById("respostaGerada")
     return resposta.textContent = str
